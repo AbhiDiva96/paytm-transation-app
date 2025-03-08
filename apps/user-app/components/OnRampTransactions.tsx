@@ -2,12 +2,12 @@ import { Card } from "@repo/ui/card"
 
 export const OnRampTransactions = ({
     transactions
-}: {
+}:{
     transactions: {
         time: Date,
         amount: number,
         // TODO: Can the type of `status` be more specific?
-        status: string,
+        status: string, 
         provider: string
     }[]
 }) => {
@@ -18,7 +18,7 @@ export const OnRampTransactions = ({
             </div>
         </Card>
     }
-    
+
     return <Card title="Recent Transactions">
         <div className="pt-2">
             {transactions.map(t => <div className="flex justify-between">
